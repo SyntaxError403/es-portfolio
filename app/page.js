@@ -42,7 +42,7 @@ const Home = () =>
       {/* <BoardingPass/>
       <BoardingPass/>
       <BoardingPass/> */}
-      <p className="p text-center text-justify p-12">Hi, I'm Eli Serrano 👋 
+      <p className="p text-center text-justify p-12">Hi, I&apos;m Eli Serrano 👋 
       <br></br>
       I am a    {' '} 
       <LinkPreview
