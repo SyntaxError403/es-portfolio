@@ -37,41 +37,41 @@ const Home = () =>
  
 { 
   return (
-    <div className="bg-white p-12 w-screen h-screen flex flex-col">
+    <><link rel="icon" href="/favicon.ico" sizes="any" /><div className="bg-white p-12 w-screen h-screen flex flex-col">
       <div className="flex flex-col">
-      {/* <BoardingPass/>
-      <BoardingPass/>
-      <BoardingPass/> */}
-      <p className="p text-center text-justify p-12">Hi, I&apos;m Eli Serrano 👋 
-      <br></br>
-      I am a    {' '} 
-      <LinkPreview
-          url="https://airoma.tech"
-      >
-          <span className="px-1 hover:font-serif hover:italic py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200 text-green-800" >full stack developer</span>,     {' '}
-      </LinkPreview>
-      <LinkPreview
-          url="https://epoch-web-tau.vercel.app/"
-      >
-      <span className="px-1 py-0.5 hover:font-serif hover:italic rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200 text-blue-800">founder</span>, and     {' '}
-      </LinkPreview>
+        {/* <BoardingPass/>
+    <BoardingPass/>
+    <BoardingPass/> */}
+        <p className="p text-center text-justify p-12">Hi, I&apos;m Eli Serrano 👋
+          <br></br>
+          I am a    {' '}
+          <LinkPreview
+            url="https://airoma.tech"
+          >
+            <span className="px-1 hover:font-serif hover:italic py-0.5 rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200 text-green-800">full stack developer</span>,     {' '}
+          </LinkPreview>
+          <LinkPreview
+            url="https://epoch-web-tau.vercel.app/"
+          >
+            <span className="px-1 py-0.5 hover:font-serif hover:italic rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200 text-blue-800">founder</span>, and     {' '}
+          </LinkPreview>
 
-      <LinkPreview
-          url="https://today.iu.edu/live/news/4035-university-launches-iu-innovates"
-      >
-      <span className="px-1 py-0.5 hover:font-serif hover:italic rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200 text-purple-800">ecosystem builder</span>
-      </LinkPreview>
-      <br></br>     
-      <br></br>
-      My work has been featured in some <span className="font-serif italic text-blue-400">cool</span> places ↴ 
-      </p>
-      <LogoGallery logos={logos}/>
-    
+          <LinkPreview
+            url="https://today.iu.edu/live/news/4035-university-launches-iu-innovates"
+          >
+            <span className="px-1 py-0.5 hover:font-serif hover:italic rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200 text-purple-800">ecosystem builder</span>
+          </LinkPreview>
+          <br></br>
+          <br></br>
+          My work has been featured in some <span className="font-serif italic text-blue-400">cool</span> places ↴
+        </p>
+        <LogoGallery logos={logos} />
+
       </div>
       <Carousel items={cards} />
 
-      <ResearchUI/>
-    </div>
+      <ResearchUI />
+    </div></>
   );
 }
 const DummyContent = () => {
@@ -110,41 +110,36 @@ const data = [
   {
     category: "Augemented Reality | Social Media",
     title: "Airoma 💚",
-    src: "/./Assets/airoma-1.png",
+    src: "/Assets/airoma-1.png",
     content: <DummyContent />,
   },
   {
     category: "Music | Social Media",
     title: "HotDrop",
-    src: "/./Assets/hotdrop-1.png",
+    src: "/Assets/hotdrop-1.png",
 
     content: <DummyContent />,
   },
   {
     category: "Entrepreneurial Ecosystem",
     title: "IU Innovates",
-    src: "/./Assets/innov8.png",
+    src: "/Assets/innov8.png",
     content: <DummyContent />,
   },
  
   {
     category: "High Frequency Trading",
     title: "Epoch",
-    src: "/./Assets/epoch.png",
+    src: "/Assets/epoch.png",
     content: <DummyContent />,
   },
   {
     category: "Entrepreneurial Support",
     title: "The Founder's Cookbook",
-    src: "/./Assets/fc.png",
+    src: "/Assets/fc.png",
     content: <DummyContent />,
   },
-  {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
-  },
+ 
 ];
 
 const cards = data.map((card, index) => (
