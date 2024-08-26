@@ -1,13 +1,11 @@
 "use client"
 import Image from "next/image";
-import BoardingPass from "@/components/ui/BoardingPass";
 import {DndContext} from '@dnd-kit/core';
 import {SortableContext} from '@dnd-kit/sortable';
 import LogoGallery from "@/components/ui/LogoGallery";
 import SplitFlapDisplay from "@/components/ui/SplitFlapDisplay";
 import Digit from "@/components/ui/Digit";
 import { motion } from "framer-motion";
-import Spline from '@splinetool/react-spline/next';
 import { LinkPreview } from "@/components/ui/link-preview";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import { FloatingDock } from "@/components/ui/floating-dock";
