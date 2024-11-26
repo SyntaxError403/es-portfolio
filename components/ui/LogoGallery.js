@@ -82,34 +82,18 @@ const LogoGallery = ({ logos, logoLinks = [] }) => {
       <Gradient className="right" />
       <Row>
         {logos.map((logo, index) => (
-          // <a 
-          //   href={logoLinks[index] || '#'} 
-          //   target="_blank" 
-          //   rel="noopener noreferrer" 
-          //   key={`row1-${index}`}
-          //   style={{ 
-          //     display: 'inline-block',
-          //     lineHeight: 0,
-          //     fontSize: 0 // Remove any potential whitespace
-          //   }}
-          // >
-            <Logo src={logo} alt={`Logo ${index}`} />
-          // </a>
+          <Logo 
+            key={`row1-${index}`}
+            src={logo} 
+            alt={`Logo ${index}`} 
+          />
         ))}
         {logos.map((logo, index) => (
-          // <a 
-          //   href={logoLinks[index] || '#'} 
-          //   target="_blank" 
-          //   rel="noopener noreferrer" 
-          //   key={`row1-${index}-duplicate`}
-          //   style={{ 
-          //     display: 'inline-block',
-          //     lineHeight: 0,
-          //     fontSize: 0 // Remove any potential whitespace
-          //   }}
-          // >
-            <Logo src={logo} alt={`Logo ${index}-duplicate`} />
-          // </a>
+          <Logo 
+            key={`row1-${index}-duplicate`}
+            src={logo} 
+            alt={`Logo ${index}-duplicate`} 
+          />
         ))}
       </Row>
     </GalleryContainer>

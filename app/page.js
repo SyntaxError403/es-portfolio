@@ -121,20 +121,15 @@ const Home = () =>
           </div>
 
           <div className="flex items-center gap-4">
-            <a href="https://github.com/yourusername" className="hover:text-neutral-900">
+            <a href="https://github.com/SyntaxError403" className="hover:text-neutral-900" target="_blank" rel="noopener noreferrer">
               <IconBrandGithub size={24} />
             </a>
-            <a href="https://instagram.com/yourusername" className="hover:text-neutral-900">
+            <a href="https://instagram.com/syntax_error_403" className="hover:text-neutral-900" target="_blank" rel="noopener noreferrer">
               <IconBrandInstagram size={24} />
             </a>
-            <a href="https://youtube.com/@yourchannel" className="hover:text-neutral-900">
-              <IconBrandYoutube size={24} />
-            </a>
-            {/* <a href="https://substack.com/@yourusername" className="hover:text-neutral-900">
-              <IconBrandSubstack size={24} />
-            </a> */}
+    
           </div> 
-          *oh, hi didn't expect you here*
+          *oh, hi didn&apos;t expect you here*
         </div>
       </footer>
     </div></>
