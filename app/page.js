@@ -16,6 +16,10 @@ import {
   IconHome,
   IconNewSection,
   IconTerminal2,
+  IconMail,
+  IconMapPin,
+  IconBrandInstagram,
+  IconBrandYoutube,
 } from "@tabler/icons-react";
 import { ResearchUI } from "@/components/research-ui";
  
@@ -31,6 +35,17 @@ const logos = [
   './Logos/ids.jpg'
 ]
 
+const logoLinks = [
+  'https://link-to-ht.com',
+  'https://link-to-ts.com',
+  'https://link-to-siu.com',
+  'https://link-to-wsj.com',
+  'https://link-to-yf.com',
+  'https://link-to-iu.com',
+  'https://link-to-wfiu.com',
+  'https://link-to-ids.com'
+]
+
 let text = "Hello";
 
 const Home = () => 
@@ -42,6 +57,17 @@ const Home = () =>
         {/* <BoardingPass/>
     <BoardingPass/>
     <BoardingPass/> */}
+        <div className="flex justify-start px-12">
+          <div className="relative w-32 h-32 rounded-full overflow-hidden" style={{border: "4px solid transparent",}}>
+            <Image
+              src="/Assets/eli-av.png" 
+              alt="Eli Serrano profile picture"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
         <p className="p text-center text-justify p-12">Hi, I&apos;m Eli Serrano 👋
           <br></br>
           I am a    {' '}
@@ -63,14 +89,54 @@ const Home = () =>
           </LinkPreview>
           <br></br>
           <br></br>
-          My work has been featured in some <span className="font-serif italic text-blue-400">cool</span> places ↴
+          My work has been featured in some <LinkPreview
+            url="https://eliserrano.notion.site/Press-Room-145fae02153780f1a0b5c3844d5a681b"
+          >
+            <span className="px-1 py-0.5 hover:font-serif hover:italic rounded-md bg-gray-100 dark:bg-neutral-800 dark:border-neutral-700 border border-gray-200 text-blue-400">cool</span>
+          </LinkPreview> places ↴
         </p>
-        <LogoGallery logos={logos} />
+        <LogoGallery logos={logos} logoLinks={logoLinks} />
 
       </div>
       <Carousel items={cards} />
 
       <ResearchUI />
+      
+      <footer className="mt-auto pt-8 border-t px-12">
+        <div className="flex flex-col gap-4 text-neutral-600">
+          <div className="flex items-center gap-2">
+            <span className="font-xlarge hover:font-serif hover:italic">Eli Serrano</span>
+          </div>
+          
+          <div className="flex items-center gap-2">
+            <IconMapPin size={20} />
+            <span className="font-medium hover:font-serif hover:italic">Bloomington, IN</span>
+          </div>
+          
+          <div className="flex items-center gap-2">
+            <IconMail size={20} />
+            <a href="mailto:eliserr@iu.edu" className="hover:font-serif hover:italic hover:text-neutral-900">
+              eliserr@iu.edu
+            </a>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <a href="https://github.com/yourusername" className="hover:text-neutral-900">
+              <IconBrandGithub size={24} />
+            </a>
+            <a href="https://instagram.com/yourusername" className="hover:text-neutral-900">
+              <IconBrandInstagram size={24} />
+            </a>
+            <a href="https://youtube.com/@yourchannel" className="hover:text-neutral-900">
+              <IconBrandYoutube size={24} />
+            </a>
+            {/* <a href="https://substack.com/@yourusername" className="hover:text-neutral-900">
+              <IconBrandSubstack size={24} />
+            </a> */}
+          </div> 
+          *oh, hi didn't expect you here*
+        </div>
+      </footer>
     </div></>
   );
 }
@@ -108,37 +174,43 @@ const DummyContent = () => {
  
 const data = [
   {
+    category: "High Frequency Trading",
+    title: "Epoch",
+    src: "/Assets/epoch.png",
+    // content: <DummyContent />,
+  },
+  {
     category: "Augemented Reality | Social Media",
     title: "Airoma 💚",
     src: "/Assets/airoma-1.png",
-    content: <DummyContent />,
+    // content: <DummyContent />,
   },
   {
     category: "Music | Social Media",
     title: "HotDrop",
     src: "/Assets/hotdrop-1.png",
 
-    content: <DummyContent />,
+    // content: <DummyContent />,
   },
   {
     category: "Entrepreneurial Ecosystem",
     title: "IU Innovates",
     src: "/Assets/innov8.png",
-    content: <DummyContent />,
+    // content: <DummyContent />,
   },
- 
   {
-    category: "High Frequency Trading",
-    title: "Epoch",
-    src: "/Assets/epoch.png",
-    content: <DummyContent />,
+    category: "Entrepreneurial Ecosystem",
+    title: "The Mill",
+    src: "/Assets/Mill.png",
+    // content: <DummyContent />,
   },
   {
     category: "Entrepreneurial Support",
     title: "The Founder's Cookbook",
     src: "/Assets/fc.png",
-    content: <DummyContent />,
+    // content: <DummyContent />,
   },
+
  
 ];
 

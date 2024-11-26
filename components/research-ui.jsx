@@ -26,45 +26,11 @@ export function ResearchUI() {
         <div className="space-y-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Research Portfolio 🔎</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div
+             <div
               className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2">
-              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+              <a href="https://epoch.trading" className="absolute inset-0 z-10" target="_blank" rel="noopener">
                 <span className="sr-only">View Project</span>
-              </Link>
-              <img
-                src="./Assets/ma.png"
-                alt="Research Project 1"
-                width={600}
-                height={400}
-                className="h-64 w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105"
-                style={{ aspectRatio: "600/400", objectFit: "cover" }} />
-              <div className="space-y-2 bg-background p-4">
-                <h3 className="text-xl font-semibold">Exploring how Founders Network (in progress)</h3>
-                <p className="text-muted-foreground">
-                An exploritray study on how foundes use networking skills to create a map of knowledge flow
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span
-                    className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                    Network Graphing
-                  </span>
-                  <span
-                    className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                    Entrepreneurship
-                  </span>
-                  <span
-                    className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                    Sociology
-                  </span>
-                </div>
-                <div className="text-sm text-muted-foreground">June 2023</div>
-              </div>
-            </div>
-            <div
-              className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2">
-              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-                <span className="sr-only">View Project</span>
-              </Link>
+              </a>
               <img
                 src="./Assets/abm-rn.png"
                 alt="Research Project 2"
@@ -73,12 +39,11 @@ export function ResearchUI() {
                 className="h-64 w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105"
                 style={{ aspectRatio: "600/400", objectFit: "cover" }} />
               <div className="space-y-2 bg-background p-4">
-                <h3 className="text-xl font-semibold">Sustainable Urban Planning Strategies</h3>
+                <h3 className="text-xl font-semibold"> Agent Based Modeling of HFT (in progress)</h3>
                 <p className="text-muted-foreground">
-                  An in-depth analysis of innovative urban planning approaches that prioritize environmental
-                  sustainability and community well-being.
+                  Disocverying how to create a ABM that can replicate the behavior of HFT firms.
                 </p>
-                <div className="flex flex-wrap gap-2">
+                {/* <div className="flex flex-wrap gap-2">
                   <span
                     className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
                     Urban Planning
@@ -91,15 +56,52 @@ export function ResearchUI() {
                     className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
                     Community
                   </span>
-                </div>
-                <div className="text-sm text-muted-foreground">August 2023</div>
+                </div> */}
+                <div className="text-sm text-muted-foreground absolute bottom-4">September 2024</div>
               </div>
-            </div>
+            </div> 
+           
             <div
               className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2">
-              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <a href="https://innovate.iu.edu/innovates/index.html" className="absolute inset-0 z-10" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">View Project</span>
-              </Link>
+              </a>
+              <img
+                src="./Assets/ma.png"
+                alt="Research Project 1"
+                width={600}
+                height={400}
+                className="h-64 w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105"
+                style={{ aspectRatio: "600/400", objectFit: "cover" }} />
+              <div className="space-y-2 bg-background p-4">
+                
+                <h3 className="text-xl font-semibold">Exploring how Founders Network (in progress)</h3>
+                <p className="text-muted-foreground">
+                An exploratory study on how foundes use networking skills to create a map of knowledge flow
+                </p>
+                {/* <div className="flex flex-wrap gap-2">
+                  <span
+                    className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                    Network Graphing
+                  </span>
+                  <span
+                    className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                    Entrepreneurship
+                  </span>
+                  <span
+                    className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                    Sociology
+                  </span>
+                </div> */}
+                <div className="text-sm text-muted-foreground pt-5">June 2024</div>
+              </div>
+            </div>
+     
+            <div
+              className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2">
+              <a href="https://eliserrano.substack.com/p/bloomingtons-homeless-situation-is" className="absolute inset-0 z-10" target="_blank" rel="noopener noreferrer">
+                <span className="sr-only">View Project</span>
+              </a>
               <img
                 src="./Assets/S370.png"
                 alt="Research Project 3"
@@ -108,28 +110,68 @@ export function ResearchUI() {
                 className="h-64 w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105"
                 style={{ aspectRatio: "600/400", objectFit: "cover" }} />
               <div className="space-y-2 bg-background p-4">
-                <h3 className="text-xl font-semibold">The Future of Remote Work</h3>
+                <h3 className="text-xl font-semibold">Sentiment Analysis of Unhoused Populations</h3>
                 <p className="text-muted-foreground">
-                  A comprehensive study on the long-term implications of the shift to remote work and its impact on
-                  productivity, well-being, and the future of the workforce.
+                  A comprehensive study on the sentiment of unhoused populations in Bloomington, Indiana.
                 </p>
-                <div className="flex flex-wrap gap-2">
+                {/* <div className="flex flex-wrap gap-2">
                   <span
                     className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                    Remote Work
+                    Sentiment Analysis
                   </span>
                   <span
                     className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                    Productivity
+                    Sociology
                   </span>
                   <span
                     className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                    Workforce
+                    Ethnography
                   </span>
-                </div>
-                <div className="text-sm text-muted-foreground">November 2023</div>
+                  
+                </div> */}
+                <div className="text-sm text-muted-foreground pt-5">November 2023</div>
               </div>
             </div>
+
+            <div
+              className="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2">
+              <a href="https://eliserrano.substack.com/p/bloomingtons-homeless-situation-is" className="absolute inset-0 z-10" target="_blank" rel="noopener noreferrer">
+                <span className="sr-only">View Project</span>
+              </a>
+              <img
+                src="./Assets/halo.jpg"
+                alt="Research Project 3"
+                width={600}
+                height={400}
+                className="h-64 w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-105"
+                style={{ aspectRatio: "600/400", objectFit: "cover" }} />
+              <div className="space-y-2 bg-background p-4">
+                <Link href="https://engineering.purdue.edu/HAB">
+                <h3 className="text-xl font-semibold">Background Radiation and Microorganisms at Low Orbit</h3>
+                <p className="text-muted-foreground">
+                  Apart of Purdue's Project HALO. Lead software and telemetery on flight system that went into earth's high altitude.  
+
+                </p>
+                {/* <div className="flex flex-wrap gap-2">
+                  <span
+                    className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                    Sentiment Analysis
+                  </span>
+                  <span
+                    className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                    Sociology
+                  </span>
+                  <span
+                    className="rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
+                    Ethnography
+                  </span>
+                  
+                </div> */}
+                <div className="text-sm text-muted-foreground pt-5">August 2021</div>
+                </Link>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>

@@ -64,25 +64,54 @@ const Row = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 50px; /* Adjust the height as needed */
-  margin: 0 15px; /* Adjust the spacing as needed */
-  padding: 0 10px; /* Padding to the left and right */
+  height: 100px; /* Keep original height */
+  max-width: 100%;
+  margin:  15px;
+  padding:  10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: block; /* Ensure image doesn't have extra space */
+
+
 `;
 
-const LogoGallery = ({ logos }) => {
+const LogoGallery = ({ logos, logoLinks = [] }) => {
   return (
     <GalleryContainer>
       <Gradient className="left" />
       <Gradient className="right" />
       <Row>
         {logos.map((logo, index) => (
-          <Logo src={logo} alt={`Logo ${index}`} key={`row1-${index}`} />
+          // <a 
+          //   href={logoLinks[index] || '#'} 
+          //   target="_blank" 
+          //   rel="noopener noreferrer" 
+          //   key={`row1-${index}`}
+          //   style={{ 
+          //     display: 'inline-block',
+          //     lineHeight: 0,
+          //     fontSize: 0 // Remove any potential whitespace
+          //   }}
+          // >
+            <Logo src={logo} alt={`Logo ${index}`} />
+          // </a>
         ))}
         {logos.map((logo, index) => (
-          <Logo src={logo} alt={`Logo ${index}-duplicate`} key={`row1-${index}-duplicate`} />
+          // <a 
+          //   href={logoLinks[index] || '#'} 
+          //   target="_blank" 
+          //   rel="noopener noreferrer" 
+          //   key={`row1-${index}-duplicate`}
+          //   style={{ 
+          //     display: 'inline-block',
+          //     lineHeight: 0,
+          //     fontSize: 0 // Remove any potential whitespace
+          //   }}
+          // >
+            <Logo src={logo} alt={`Logo ${index}-duplicate`} />
+          // </a>
         ))}
       </Row>
-      
     </GalleryContainer>
   );
 };
