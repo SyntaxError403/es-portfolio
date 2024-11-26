@@ -167,18 +167,81 @@ const DummyContent = () => {
   );
 };
  
+const AiromaContent = () => {
+  return (
+    <div>
+      <img src="/Assets/a1.png" alt="Airoma" style={{width: "100%", height: "auto"}} />
+     <p className="text-justify py-5 text-lg">Airoma was a venture backed startup I officially created in 2021, however, the idea and early MVPs date back to late 2016. 
+      I was inspired by the wave of popularity and the mechanics of Pokemon Go. 
+      The game brought everyone outside, made us be social, and had some cool AR tech to catch Pokemon characters.
+      I wanted to take this idea and apply it to social media. Get people outside and exploring using location based AR. </p>
+      <img src="/Assets/a2.png" alt="Airoma" style={{width: "100%", height: "auto"}} />
+
+      <p className="text-justify py-5 text-lg">I saw Airoma more than just another social media app, I saw it potentially becoming the catalysts for a new revival as something that got people outside and to take a moment to care for their mental health which often gets greatly overlooked by any other social media app. We made our values, and stuck true to them till the end. </p>
+      <img src="/Assets/a3.png" alt="Airoma" style={{width: "100%", height: "auto"}} />
+      <p className="text-justify py-5 text-lg">Early app versions were half baked Android apps that were incredibly buggy due to AR being a very recent technology and early documentation of Google ARCore was sparse. (I had notifications on their releases, triggers on Stackoverflow and Reddit for threads that mention AR to try to learn more from others also struggling) </p>
+      <p className="text-justify py-5 text-lg"> 
+      When 2021 came, I decided to switch from a native app development to React Native to get 2 app platforms built for the price of 1 codebase. For 75% of the features and design, React Native worked straight out of the box with many open libraries. 
+      </p>
+      <img src="/Assets/a4.png" alt="Airoma" style={{width: "100%", height: "auto"}} />
+   
+    </div>
+  )
+}
+
+const EpochContent = () => {
+  return (
+    <div>
+      <img src="/Assets/epoch-bg.jpg" alt="Epoch" style={{width: "100%", height: "auto"}} />
+      <div className="border-l-4 border-blue-500 pl-6 my-8">
+        <div className="mb-4">
+          <span className="font-mono text-lg text-gray-600">e·poch</span>
+          <span className="text-gray-400 ml-2 font-serif">/epək/</span>
+        </div>
+        
+        <div className="mb-2">
+          <span className="italic text-gray-600">noun</span>
+        </div>
+        
+        <div className="space-y-3">
+          <p className="text-gray-800">
+            <span className="font-medium">1.</span> A particular period of history, especially one considered remarkable or noteworthy. 
+          </p>
+          
+          <p className="text-gray-800">
+            <span className="font-medium">2.</span> An instant in time that is arbitrarily selected as a point of reference for specification of celestial coordinates.  
+          </p>
+          <p className="text-gray-800">
+            <span className="font-medium">3.</span> A new era of democritizing the HFT industry 
+          </p>
+          
+          <p className="text-gray-600 text-sm italic mt-4">
+          &quot;Epoch enables traders to test strategies against AI-powered market participants in a risk-free environment&quot;
+          </p>
+        </div>
+      </div>
+      <p className="text-justify py-5 text-lg">Epoch is a simulated High Frequency Trading (HFT) platform that emulates every aspect of trading from networking to SIP/NBBO system and simulating thousands of other traders with a custom AI to match real the world HFT conditions. Epoch let&apos;s anyone test and learn strategies in real time with no experience, coding skills, or money needed. Epoch is a back 
+      testing alternative tool that can also let firms see limit order book information they can&apos;t see in real time markets, simulate dark pools, and create algorithms in a safe R&D environment.</p>
+    
+      <p className="text-justify py-5 text-lg font-serif italic text-purple-800">This will help people land HFT jobs and for firms to de-risk strategies. </p>
+
+      <p className="text-justify py-5 text-lg font-serif italic text-green-800"> More to come... </p>
+    </div>
+  )
+}
+
 const data = [
   {
     category: "High Frequency Trading",
     title: "Epoch",
     src: "/Assets/epoch.png",
-    // content: <DummyContent />,
+    content: <EpochContent />,
   },
   {
     category: "Augemented Reality | Social Media",
     title: "Airoma 💚",
     src: "/Assets/airoma-1.png",
-    // content: <DummyContent />,
+    content: <AiromaContent />,
   },
   {
     category: "Music | Social Media",
@@ -208,6 +271,9 @@ const data = [
 
  
 ];
+
+
+
 
 const cards = data.map((card, index) => (
   <Card key={card.src} card={card} index={index} />
