@@ -201,7 +201,7 @@ const data = [
   },
   {
     category: "Entrepreneurial Support",
-    title: "The Founder's Cookbook",
+    title: "The Founders Cookbook",
     src: "/Assets/fc.png",
     // content: <DummyContent />,
   },
