@@ -18,7 +18,7 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import Link from "next/link"
-
+import Image from "next/image"
 export function ResearchUI() {
   return (
     (<section className="w-full py-12 md:py-24 lg:py-32">
@@ -31,8 +31,8 @@ export function ResearchUI() {
               <a href="https://epoch.trading" className="absolute inset-0 z-10" target="_blank" rel="noopener">
                 <span className="sr-only">View Project</span>
               </a>
-              <img
-                src="./Assets/abm-rn.png"
+              <Image
+                src="/Assets/abm-rn.png"
                 alt="Research Project 2"
                 width={600}
                 height={400}
@@ -66,8 +66,8 @@ export function ResearchUI() {
                 <a href="https://innovate.iu.edu/innovates/index.html" className="absolute inset-0 z-10" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">View Project</span>
               </a>
-              <img
-                src="./Assets/ma.png"
+              <Image
+                src="/Assets/ma.png"
                 alt="Research Project 1"
                 width={600}
                 height={400}
@@ -102,8 +102,8 @@ export function ResearchUI() {
               <a href="https://eliserrano.substack.com/p/bloomingtons-homeless-situation-is" className="absolute inset-0 z-10" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">View Project</span>
               </a>
-              <img
-                src="./Assets/S370.png"
+              <Image
+                src="/Assets/S370.png"
                 alt="Research Project 3"
                 width={600}
                 height={400}
@@ -138,8 +138,8 @@ export function ResearchUI() {
               <a href="https://eliserrano.substack.com/p/bloomingtons-homeless-situation-is" className="absolute inset-0 z-10" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">View Project</span>
               </a>
-              <img
-                src="./Assets/halo.jpg"
+              <Image
+                src="/Assets/halo.jpg"
                 alt="Research Project 3"
                 width={600}
                 height={400}
@@ -149,7 +149,7 @@ export function ResearchUI() {
                 <Link href="https://engineering.purdue.edu/HAB">
                 <h3 className="text-xl font-semibold">Background Radiation and Microorganisms at Low Orbit</h3>
                 <p className="text-muted-foreground">
-                  Apart of Purdue's Project HALO. Lead software and telemetery on flight system that went into earth's high altitude.  
+                  Apart of Purdue&apos;s Project HALO. Lead software and telemetery on flight system that went into earth&apos;s high altitude.  
 
                 </p>
                 {/* <div className="flex flex-wrap gap-2">
