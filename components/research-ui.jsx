@@ -41,7 +41,7 @@ export function ResearchUI() {
               <div className="space-y-2 bg-background p-4">
                 <h3 className="text-xl font-semibold"> Agent Based Modeling of HFT (in progress)</h3>
                 <p className="text-muted-foreground">
-                  Disocverying how to create a ABM that can replicate the behavior of HFT firms.
+                  Discovering how to create a ABM that can replicate the behavior of HFT firms.
                 </p>
                 {/* <div className="flex flex-wrap gap-2">
                   <span
